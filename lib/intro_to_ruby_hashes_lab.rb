@@ -8,8 +8,9 @@ end
 
 def update_counting_hash(hash, key)
   if hash[key]
-   my_hash = {key => (hash[key] + 1)} 
+   hash = {key => (hash[key] + 1)} 
     else
-      my_other_hash = {key => 1}
+      hash = {key => 1}
   end
+  hash
 end
